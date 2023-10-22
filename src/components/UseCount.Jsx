@@ -3,6 +3,7 @@ import { useState } from "react"
 export default function useCount(initialValue) {
     const [val, setVal] = useState(initialValue)
 
+
     const handleIncrease = () =>{
          setVal(val + 1)
     }
@@ -11,11 +12,15 @@ export default function useCount(initialValue) {
         setVal(val - 1)
     }
 
-    const setvalue = () => {
+    const resetValue = () => {
         setVal(initialValue)
     }
 
-    return {val, handleDecrease, handleIncrease, setvalue}
+    const setValue = (newValue) => {
+        setVal(newValue)
+    };
+
+    return {val, handleDecrease, handleIncrease, resetValue, setValue}
 
 }
 

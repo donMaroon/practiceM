@@ -14,6 +14,9 @@ const SignIn = () => {
           localStorage.setItem('nameData', 'mildred')
           localStorage.setItem('emailData', 'mildred@gmail.com')
           localStorage.setItem('passwordData', '123456')
+          if(getEmail&&getName&&getPassword) {
+            return redirect('/')
+          }
         }
       };
 

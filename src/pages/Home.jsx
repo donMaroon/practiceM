@@ -1,8 +1,8 @@
-import useGetname from "../components/UseGetname"
+// import useGetname from "../components/UseGetname"
 
 const Home = () => {
 
-  const names = useGetname()
+  // const names = useGetname()
 
   return (
     <div className='home'>

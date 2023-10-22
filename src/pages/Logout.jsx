@@ -12,7 +12,7 @@ const Logout = () => {
     <div>
         {
             !getEmail&&!getName&&!getPassword ? <h2>
-                Go back to <Link to="/home">Home</Link>
+                Go back to <Link to="/">Home</Link>
             </h2> :
             <div>
                 <h2>Welcome Mildred</h2>
